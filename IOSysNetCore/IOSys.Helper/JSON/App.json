@@ -1,0 +1,21 @@
+﻿{
+  "TokenTimeOutDay": 1,
+  "DBConnStr": "server=127.0.0.1;database=IOSysV4_Demo;user id=iosysv4_demo;password=iosysv4_demo",
+  "LstWithOrigins": [ "http://localhost:8080", "http://localhost:8100", "http://localhost:11004" ],
+  "LstAnonymousIP": [ "localhost", "::1", "127.0.0.1", "172.81.235.6" ],
+  "DBBackupPath": "DBBackup",
+  "DBBackupToEmail": "187235004@qq.com",
+  "WaiteLockMinute": 1,
+  "Email": {
+    "SmtpHost": "smtp.qq.com",
+    "SmtpPort": 587,
+    "SmtpPwd": "pkbwowkwrwunbhaa",
+    "FromEmailName": "tdb",
+    "FromEmail": "187235004@qq.com"
+  },
+  "AppVer": {
+    "Ver": "4.6.5",
+    "IsForce": false,
+    "Path": "/Files/APP/Update/4.6.5/iosysv4.apk"
+  }
+}

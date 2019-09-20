@@ -1,0 +1,137 @@
+﻿{
+  "Acc": {
+    "LoginParamEmpty": {
+      "Code": "IO_Acc_001",
+      "Msg": "用户名或密码不能为空"
+    },
+    "LoginParamIncorrect": {
+      "Code": "IO_Acc_002",
+      "Msg": "用户名或密码不对"
+    },
+    "UserNoFamily": {
+      "Code": "IO_Acc_003",
+      "Msg": "该用户尚未指定家庭，请联系管理员"
+    },
+    "LoginOK": {
+      "Code": "IO_Acc_004",
+      "Msg": "登录成功"
+    },
+    "LoginNameExisted": {
+      "Code": "IO_Acc_005",
+      "Msg": "登录名已存在"
+    },
+    "NickNameEmpty": {
+      "Code": "IO_Acc_006",
+      "Msg": "昵称不能为空"
+    },
+    "UserUnexist": {
+      "Code": "IO_Acc_007",
+      "Msg": "用户不存在"
+    },
+    "OldPasswordIncorrect": {
+      "Code": "IO_Acc_008",
+      "Msg": "原密码不对"
+    },
+    "PasswordTooLong": {
+      "Code": "IO_Acc_009",
+      "Msg": "密码长度不能超过{0}位"
+    },
+    "PasswordEmpty": {
+      "Code": "IO_Acc_010",
+      "Msg": "密码不能为空"
+    }
+  },
+  "Bas": {
+    "NameExisted": {
+      "Code": "IO_Bas_001",
+      "Msg": "名称已存在"
+    },
+    "BeenUsed": {
+      "Code": "IO_Bas_002",
+      "Msg": "已被使用"
+    },
+    "AmountAccountUnexist": {
+      "Code": "IO_Bas_003",
+      "Msg": "账户不存在"
+    },
+    "InTypeUnexist": {
+      "Code": "IO_Bas_004",
+      "Msg": "收入类型不存在"
+    },
+    "OutTypeUnexist": {
+      "Code": "IO_Bas_005",
+      "Msg": "支出类型不存在"
+    },
+    "BorrowRepayTypeUnexist": {
+      "Code": "IO_Bas_006",
+      "Msg": "借还类型不存在"
+    }
+  },
+  "IO": {
+    "BRTargetEmpty": {
+      "Code": "IO_IO_001",
+      "Msg": "对方名称不能为空"
+    }
+  },
+  "Gen": {
+    "OK": {
+      "Code": "IO_Gen_001",
+      "Msg": "成功"
+    },
+    "UnkonwErr": {
+      "Code": "IO_Gen_002",
+      "Msg": "未知错误：{0}"
+    },
+    "TokenOK": {
+      "Code": "IO_Gen_011",
+      "Msg": "签名验证通过"
+    },
+    "TokenError": {
+      "Code": "IO_Gen_012",
+      "Msg": "签名验证失败。（Token：{0}，Message：{1}）"
+    },
+    "NoRight": {
+      "Code": "IO_Gen_013",
+      "Msg": "无权操作"
+    },
+    "IPError": {
+      "Code": "IO_Gen_014",
+      "Msg": "IP不允许匿名访问。（IP：{0}）"
+    },
+    "WaiteTimeOut": {
+      "Code": "IO_Gen_015",
+      "Msg": "等锁超时"
+    }
+  },
+  "Cst": {
+    "TranDir": {
+      "TransferIn": "转入",
+      "TransferOut": "转出"
+    },
+    "BRT": {
+      "BorrowIn": "借入",
+      "RepayIn": "还入",
+      "BorrowOut": "借出",
+      "RepayOut": "还出"
+    },
+    "IGT": {
+      "InType": "类型",
+      "AmountAccount": "账户",
+      "Month": "月份",
+      "Year": "年度"
+    },
+    "OGT": {
+      "OutCategory": "分类",
+      "OutType": "类型",
+      "AmountAccount": "账户",
+      "Month": "月份",
+      "Year": "年度"
+    },
+    "DT": {
+      "In": "收入",
+      "Out": "支出",
+      "Transfer": "转账",
+      "BorrowRepay": "借还"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+﻿{
+  "IOApiUrl": "http://127.0.0.1:10001",
+  "LstWithOrigins": [ "http://localhost:10001", "http://127.0.0.1:10001" ],
+  "IOLoginName": "user",
+  "IOLoginPwd": "password"
+}

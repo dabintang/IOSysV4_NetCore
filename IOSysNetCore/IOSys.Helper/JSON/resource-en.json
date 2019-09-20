@@ -1,0 +1,20 @@
+﻿{
+  "Acc": {
+    "LoginParamEmpty": {
+      "Code": "IO_Acc_001",
+      "Msg": "the user name or password can not be empty"
+    },
+    "LoginParamIncorrect": {
+      "Code": "IO_Acc_002",
+      "Msg": "incorrect user name or password"
+    },
+    "UserNoFamily": {
+      "Code": "IO_Acc_003",
+      "Msg": "the user has not specified the family, please contact the administrator"
+    },
+    "LoginOK": {
+      "Code": "IO_Acc_004",
+      "Msg": "login ok"
+    }
+  }
+}
