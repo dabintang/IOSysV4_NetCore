@@ -3,6 +3,7 @@
 
 系统演示地址：（尚未部署）  
 微博地址：[https://blog.csdn.net/dabintang](https://blog.csdn.net/dabintang)
+<a href="https://blog.csdn.net/dabintang" target="_blank">https://blog.csdn.net/dabintang</a>
 
 V4版本的系统大概由以下几个项目组成：  
 接口项目：即本项目  
