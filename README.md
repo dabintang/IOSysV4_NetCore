@@ -1,17 +1,16 @@
 # IOSysV4_NetCore
 家庭收支系统V4接口（包含模拟收支操作的API）
 
-系统演示地址：（尚未部署）  
+## 系统演示地址：（尚未部署）  
 微博地址：[https://blog.csdn.net/dabintang](https://blog.csdn.net/dabintang/article/details/101120513)  
 
-V4版本的系统主要由以下几个项目组成：  
+## V4版本的系统主要由以下几个项目组成：  
 接口项目：即本项目  
 pc端web ：（还没上传到github，上传后会替换成对应地址）  
 安卓app ：（还没上传到github，上传后会替换成对应地址）  
 任务调度：https://github.com/dabintang/IOSysV4_Hangfire   
 
-
-本项目简介：  
+## 技术栈：  
 语言：asp.net core 2.2  
 数据库：mysql
 
