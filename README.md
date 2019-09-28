@@ -6,7 +6,7 @@
 
 ## V4版本的系统主要由以下几个项目组成：  
 接口项目：即本项目  
-pc端web ：（还没上传到github，上传后会替换成对应地址）  
+pc端web ：https://github.com/dabintang/IOSysV4_WebVue  
 安卓app ：（还没上传到github，上传后会替换成对应地址）  
 任务调度：https://github.com/dabintang/IOSysV4_Hangfire   
 
