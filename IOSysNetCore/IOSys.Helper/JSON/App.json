@@ -9,7 +9,7 @@
   "Email": {
     "SmtpHost": "smtp.qq.com",
     "SmtpPort": 587,
-    "SmtpPwd": "pkbwowkwrwunbhaa",
+    "SmtpPwd": "krbwowkwrwunbhbb",
     "FromEmailName": "tdb",
     "FromEmail": "187235004@qq.com"
   },
