@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using TDB.AutoSimulator.ConsoleApp.Configs;
 
 namespace TDB.AutoSimulator.ConsoleApp
 {
@@ -36,7 +37,7 @@ namespace TDB.AutoSimulator.ConsoleApp
                 builder.AllowAnyMethod();
                 builder.SetPreflightMaxAge(TimeSpan.FromDays(1));
 
-                builder.WithOrigins(new string[] { "localhost", "::1", "127.0.0.1", "172.81.235.6" });
+                builder.WithOrigins(AppConfig.Inst.App.LstWithOrigins.ToArray());
             });
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.

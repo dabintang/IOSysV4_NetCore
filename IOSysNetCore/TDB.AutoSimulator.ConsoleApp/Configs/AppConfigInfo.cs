@@ -20,6 +20,11 @@ namespace TDB.AutoSimulator.ConsoleApp.Configs
         public List<string> LstWithOrigins { get; set; }
 
         /// <summary>
+        /// 本服务url
+        /// </summary>
+        public string MyUrl { get; set; }
+
+        /// <summary>
         /// 收支系统默认用户登录名
         /// </summary>
         public string IOLoginName { get; set; }

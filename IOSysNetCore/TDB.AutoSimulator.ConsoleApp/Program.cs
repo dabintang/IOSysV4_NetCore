@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using System;
 using System.IO;
+using TDB.AutoSimulator.ConsoleApp.Configs;
 
 namespace TDB.AutoSimulator.ConsoleApp
 {
@@ -8,11 +9,12 @@ namespace TDB.AutoSimulator.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("模拟收支");
 
             var host = new WebHostBuilder()
             .UseKestrel()
             .UseContentRoot(Directory.GetCurrentDirectory())
+            .UseUrls(AppConfig.Inst.App.MyUrl)
             .UseStartup<Startup>()
             .Build();
 
