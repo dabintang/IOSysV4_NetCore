@@ -31,4 +31,10 @@
     <Folder Include="StaticFiles\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="StaticFiles\放资源文件.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
