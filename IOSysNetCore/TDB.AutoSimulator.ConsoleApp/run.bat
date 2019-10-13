@@ -1,0 +1,1 @@
+start dotnet TDB.AutoSimulator.ConsoleApp.dll

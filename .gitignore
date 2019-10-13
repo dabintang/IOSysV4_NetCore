@@ -9,3 +9,11 @@
 /IOSysNetCore/IOSys.Model/obj
 /IOSysNetCore/IOSys.API/obj
 /IOSysNetCore/IOSys.API/bin
+/IOSysNetCore/TDB.DB/bin
+/IOSysNetCore/Test/bin
+/IOSysNetCore/IOSys.BLL/bin
+/IOSysNetCore/IOSys.DAL/bin
+/IOSysNetCore/IOSys.DTO/bin
+/IOSysNetCore/IOSys.Helper/bin
+/IOSysNetCore/IOSys.Model/bin
+/IOSysNetCore/TDB.AutoSimulator.ConsoleApp/bin
