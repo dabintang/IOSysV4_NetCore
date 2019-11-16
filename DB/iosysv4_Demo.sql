@@ -81,7 +81,7 @@ CREATE TABLE `borrowrepay` (
   `Target` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `BRType` int(11) NOT NULL,
   `AmountAccountID` int(11) NOT NULL,
-  `Amount` decimal(10,0) NOT NULL,
+  `Amount` decimal(18,2) NOT NULL,
   `Remark` varchar(1024) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `CreatorID` int(11) NOT NULL,
   `CreateTime` datetime NOT NULL,
