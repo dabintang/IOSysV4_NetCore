@@ -25,6 +25,8 @@ namespace IOSys.API
             //初始化配置
             ConfigHelper.Init();
 
+            Console.WriteLine("收支系统接口");
+
             CreateWebHostBuilder(args).Build().Run();
         }
 
