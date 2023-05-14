@@ -71,7 +71,7 @@ namespace TDB.DB
                         cmd.Connection = conn;
                         conn.Open();
                         mb.ExportToFile(file);
-                        conn.Close();
+                        //conn.Close();
                     }
                 }
             }

@@ -17,16 +17,24 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            //ConfigHelper.Init();
+            ConfigHelper.Init();
 
             //TestAsync();
 
             //var test = InOutDAL.Inst.GetMinTurnoverDate(4).Result;
 
-            TestLock test = new TestLock();
-            test.Test2();
+            //TestLock test = new TestLock();
+            //test.Test2();
+
+            TestDBBackup();
 
             Console.ReadLine();
+        }
+
+        private static void TestDBBackup()
+        {
+            var bll = new MysqlBLL();
+            bll.Backup();
         }
 
         private static void TestDB()

@@ -1,6 +1,6 @@
 ﻿{
   "TokenTimeOutDay": 1,
-  "DBConnStr": "server=127.0.0.1;database=IOSysV4_Demo;user id=iosysv4_demo;password=iosysv4_demo",
+  "DBConnStr": "server=127.0.0.1;database=tdb.ddd.demo;user id=root;password=abc123456;Pooling=True;Allow User Variables=True;",
   "LstWithOrigins": [ "http://localhost:8080", "http://localhost:8100", "http://localhost:11004" ],
   "LstAnonymousIP": [ "localhost", "::1", "127.0.0.1", "172.81.235.6" ],
   "DBBackupPath": "DBBackup",
