@@ -59,7 +59,8 @@ namespace IOSys.Helper
                             swEncrypt.Write(text);
                         }
                         byte[] bytes = msEncrypt.ToArray();
-                        return ByteArrayToHexString(bytes);
+                        var strAes = ByteArrayToHexString(bytes);
+                        return strAes;
                     }
                 }
             }

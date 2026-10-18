@@ -10,10 +10,16 @@
     <DocumentationFile>bin\Debug\netcoreapp2.2\IOSys.API.xml</DocumentationFile>
     <OutputPath>bin\Debug\</OutputPath>
     <NoWarn>1701;1702;1591</NoWarn>
+    <DebugType>portable</DebugType>
   </PropertyGroup>
   
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>portable</DebugType>
   </PropertyGroup>
 
   <ItemGroup>

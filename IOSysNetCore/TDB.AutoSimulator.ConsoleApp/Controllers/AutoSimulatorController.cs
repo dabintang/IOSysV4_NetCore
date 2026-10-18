@@ -2,6 +2,7 @@
 using IOSys.DTO.Account;
 using IOSys.DTO.Basic;
 using IOSys.DTO.InOut;
+using IOSys.Helper;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,6 @@ using System.Text;
 using System.Threading.Tasks;
 using TDB.AutoSimulator.ConsoleApp.Configs;
 using TDB.AutoSimulator.ConsoleApp.DTO;
-using TDB.AutoSimulator.ConsoleApp.Helper;
 using TDB.AutoSimulator.ConsoleApp.Http;
 
 namespace TDB.AutoSimulator.ConsoleApp.Controllers

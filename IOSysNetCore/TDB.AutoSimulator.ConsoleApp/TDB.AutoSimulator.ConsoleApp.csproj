@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IOSys.DTO\IOSys.DTO.csproj" />
+    <ProjectReference Include="..\IOSys.Helper\IOSys.Helper.csproj" />
   </ItemGroup>
 
   <ItemGroup>

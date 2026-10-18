@@ -914,14 +914,27 @@ namespace IOSys.BLL
         /// <returns></returns>
         public async Task<List<MonthSumListInfo<string>>> SumMonthAsync(MonthSumReq req)
         {
+            //指定年份时的统计范围（该年1月1日 ~ 12月31日）
+            DateTime? startDate = null;
+            DateTime? endDate = null;
+            if (req.Year.HasValue)
+            {
+                startDate = new DateTime(req.Year.Value, 1, 1);
+                endDate = startDate.Value.AddYears(1).AddMilliseconds(-1);
+            }
+
             //收入
             var reqIn = new InSumReq();
+            reqIn.StartDate = startDate;
+            reqIn.EndDate = endDate;
             reqIn.GroupType = EnmInGroupType.Month;
             reqIn.IsContainBorrowRepay = req.IsContainBorrowRepay;
             var taskIn = this.SumInComeAsync(reqIn);
 
             //支出
             var reqOut = new OutSumReq();
+            reqOut.StartDate = startDate;
+            reqOut.EndDate = endDate;
             reqOut.GroupType = EnmOutGroupType.Month;
             reqOut.IsContainBorrowRepay = req.IsContainBorrowRepay;
             var taskOut = this.SumOutPutAsync(reqOut);
@@ -947,6 +960,60 @@ namespace IOSys.BLL
             foreach (var output in lstOut)
             {
                 list.Add(new MonthSumListInfo<string>()
+                {
+                    name = output.name,
+                    value = -output.value,
+                    DataType = EnmDataType.Out,
+                    DataTypeName = this.Res.Cst.DT.Out
+                });
+            }
+
+            //排序
+            list = list.OrderByDescending(m => m.name).ThenByDescending(m => m.value).ToList();
+
+            return list;
+        }
+
+        /// <summary>
+        /// 年度统计
+        /// </summary>
+        /// <param name="req"></param>
+        /// <returns></returns>
+        public async Task<List<YearSumListInfo<string>>> SumYearAsync(YearSumReq req)
+        {
+            //收入
+            var reqIn = new InSumReq();
+            reqIn.GroupType = EnmInGroupType.Year;
+            reqIn.IsContainBorrowRepay = req.IsContainBorrowRepay;
+            var taskIn = this.SumInComeAsync(reqIn);
+
+            //支出
+            var reqOut = new OutSumReq();
+            reqOut.GroupType = EnmOutGroupType.Year;
+            reqOut.IsContainBorrowRepay = req.IsContainBorrowRepay;
+            var taskOut = this.SumOutPutAsync(reqOut);
+
+            //结果
+            var list = new List<YearSumListInfo<string>>();
+
+            //收入
+            var lstIn = await taskIn;
+            foreach (var income in lstIn)
+            {
+                list.Add(new YearSumListInfo<string>()
+                {
+                    name = income.name,
+                    value = income.value,
+                    DataType = EnmDataType.In,
+                    DataTypeName = this.Res.Cst.DT.In
+                });
+            }
+
+            //支出
+            var lstOut = await taskOut;
+            foreach (var output in lstOut)
+            {
+                list.Add(new YearSumListInfo<string>()
                 {
                     name = output.name,
                     value = -output.value,

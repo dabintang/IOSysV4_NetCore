@@ -175,6 +175,19 @@ namespace IOSys.API.Controllers
         }
 
         /// <summary>
+        /// 年度统计
+        /// </summary>
+        /// <param name="req"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("SumYear")]
+        public async Task<ResultList<YearSumListInfo<string>>> SumYearAsync([FromQuery]YearSumReq req)
+        {
+            var list = await this.bll.SumYearAsync(req);
+            return new ResultList<YearSumListInfo<string>>(true, this.bll.Res.Gen.OK, list);
+        }
+
+        /// <summary>
         /// 月份支出统计
         /// </summary>
         /// <param name="req"></param>

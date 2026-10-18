@@ -11,6 +11,11 @@ namespace IOSys.DTO.Report
     public class MonthSumReq : BaseReq
     {
         /// <summary>
+        /// 年份（可空；为空时统计全部年份，不为空时只统计指定年份的月份数据）
+        /// </summary>
+        public int? Year { get; set; }
+
+        /// <summary>
         /// 是否包含借还
         /// </summary>
         public bool IsContainBorrowRepay { get; set; }

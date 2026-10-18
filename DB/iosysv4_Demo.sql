@@ -40,10 +40,10 @@ CREATE TABLE `amountaccount` (
 -- ----------------------------
 -- Records of amountaccount
 -- ----------------------------
-INSERT INTO `amountaccount` VALUES ('1', '2', '现金', '0.00', '0.00', '0', '1', '', '5', '2019-08-17 09:09:40', null, null);
-INSERT INTO `amountaccount` VALUES ('2', '2', '支付宝', '0.00', '0.00', '0', '1', '', '5', '2019-08-17 09:09:47', null, null);
-INSERT INTO `amountaccount` VALUES ('3', '2', '微信', '0.00', '0.00', '0', '1', '', '5', '2019-08-17 09:09:55', null, null);
-INSERT INTO `amountaccount` VALUES ('4', '2', '建行', '0.00', '0.00', '0', '1', '', '5', '2019-08-17 09:10:37', '5', '2019-08-03 09:13:57');
+INSERT INTO `amountaccount` VALUES ('1', '2', '现金', '0.00', '0.00', '0', '1', '', '5', '2026-09-17 09:09:40', null, null);
+INSERT INTO `amountaccount` VALUES ('2', '2', '支付宝', '0.00', '0.00', '0', '1', '', '5', '2026-09-17 09:09:47', null, null);
+INSERT INTO `amountaccount` VALUES ('3', '2', '微信', '0.00', '0.00', '0', '1', '', '5', '2026-09-17 09:09:55', null, null);
+INSERT INTO `amountaccount` VALUES ('4', '2', '建行', '0.00', '0.00', '0', '1', '', '5', '2026-09-17 09:10:37', '5', '2026-09-03 09:13:57');
 
 -- ----------------------------
 -- Table structure for amountaccounttransfer
@@ -116,8 +116,8 @@ CREATE TABLE `family` (
 -- ----------------------------
 -- Records of family
 -- ----------------------------
-INSERT INTO `family` VALUES ('2', '测试家庭', '测试的收支系统', '0', '2019-08-17 21:00:00', null, null);
-INSERT INTO `family` VALUES ('3', '管理员之家', '管理员是没有实际家庭', '0', '2019-08-17 23:33:11', null, null);
+INSERT INTO `family` VALUES ('2', '测试家庭', '测试的收支系统', '0', '2026-09-17 21:00:00', null, null);
+INSERT INTO `family` VALUES ('3', '管理员之家', '管理员是没有实际家庭', '0', '2026-09-17 23:33:11', null, null);
 
 -- ----------------------------
 -- Table structure for income
@@ -168,9 +168,9 @@ CREATE TABLE `intype` (
 -- ----------------------------
 -- Records of intype
 -- ----------------------------
-INSERT INTO `intype` VALUES ('1', '2', '工资', '4', '0', '1', '', '5', '2019-08-17 09:11:51', null, null);
-INSERT INTO `intype` VALUES ('2', '2', '盘盈', '1', '0', '1', '盘点发现钱多了时用', '5', '2019-08-17 09:12:27', '5', '2019-08-03 09:12:56');
-INSERT INTO `intype` VALUES ('3', '2', '其他', '1', '0', '1', '', '5', '2019-08-17 09:13:11', null, null);
+INSERT INTO `intype` VALUES ('1', '2', '工资', '4', '0', '1', '', '5', '2026-09-17 09:11:51', null, null);
+INSERT INTO `intype` VALUES ('2', '2', '盘盈', '1', '0', '1', '盘点发现钱多了时用', '5', '2026-09-17 09:12:27', '5', '2026-09-03 09:12:56');
+INSERT INTO `intype` VALUES ('3', '2', '其他', '1', '0', '1', '', '5', '2026-09-17 09:13:11', null, null);
 
 -- ----------------------------
 -- Table structure for loginlog
@@ -209,10 +209,10 @@ CREATE TABLE `outcategory` (
 -- ----------------------------
 -- Records of outcategory
 -- ----------------------------
-INSERT INTO `outcategory` VALUES ('1', '2', '餐饮', '0', '1', '', '5', '2019-08-17 09:14:39', null, null);
-INSERT INTO `outcategory` VALUES ('2', '2', '居家', '0', '1', '', '5', '2019-08-17 09:15:09', null, null);
-INSERT INTO `outcategory` VALUES ('3', '2', '娱乐', '0', '1', '', '5', '2019-08-17 09:15:26', null, null);
-INSERT INTO `outcategory` VALUES ('4', '2', '其他', '0', '1', '其他', '5', '2019-08-17 09:19:50', null, null);
+INSERT INTO `outcategory` VALUES ('1', '2', '餐饮', '0', '1', '', '5', '2026-09-17 09:14:39', null, null);
+INSERT INTO `outcategory` VALUES ('2', '2', '居家', '0', '1', '', '5', '2026-09-17 09:15:09', null, null);
+INSERT INTO `outcategory` VALUES ('3', '2', '娱乐', '0', '1', '', '5', '2026-09-17 09:15:26', null, null);
+INSERT INTO `outcategory` VALUES ('4', '2', '其他', '0', '1', '其他', '5', '2026-09-17 09:19:50', null, null);
 
 -- ----------------------------
 -- Table structure for output
@@ -264,16 +264,16 @@ CREATE TABLE `outtype` (
 -- ----------------------------
 -- Records of outtype
 -- ----------------------------
-INSERT INTO `outtype` VALUES ('1', '2', '4', '其他', '1', '0', '1', '', '5', '2019-08-17 09:19:59', null, null);
-INSERT INTO `outtype` VALUES ('2', '2', '3', '门票', '2', '0', '1', '', '5', '2019-08-17 09:20:32', null, null);
-INSERT INTO `outtype` VALUES ('3', '2', '3', '电影', '3', '0', '1', '', '5', '2019-08-17 09:20:48', null, null);
-INSERT INTO `outtype` VALUES ('4', '2', '2', '房租', '4', '0', '1', '', '5', '2019-08-17 09:21:04', null, null);
-INSERT INTO `outtype` VALUES ('5', '2', '2', '家具', '2', '0', '1', '', '5', '2019-08-17 09:21:14', null, null);
-INSERT INTO `outtype` VALUES ('6', '2', '2', '煤气', '3', '0', '1', '', '5', '2019-08-17 09:21:54', null, null);
-INSERT INTO `outtype` VALUES ('7', '2', '1', '在外吃喝', '2', '0', '1', '', '5', '2019-08-17 09:22:14', null, null);
-INSERT INTO `outtype` VALUES ('8', '2', '1', '食材', '2', '0', '1', '', '5', '2019-08-17 09:22:25', null, null);
-INSERT INTO `outtype` VALUES ('9', '2', '1', '水果零食', '2', '0', '1', '', '5', '2019-08-17 09:22:42', null, null);
-INSERT INTO `outtype` VALUES ('10', '2', '4', '盘亏', '2', '0', '1', '盘点亏损时用', '5', '2019-08-18 18:38:15', null, null);
+INSERT INTO `outtype` VALUES ('1', '2', '4', '其他', '1', '0', '1', '', '5', '2026-09-17 09:19:59', null, null);
+INSERT INTO `outtype` VALUES ('2', '2', '3', '门票', '2', '0', '1', '', '5', '2026-09-17 09:20:32', null, null);
+INSERT INTO `outtype` VALUES ('3', '2', '3', '电影', '3', '0', '1', '', '5', '2026-09-17 09:20:48', null, null);
+INSERT INTO `outtype` VALUES ('4', '2', '2', '房租', '4', '0', '1', '', '5', '2026-09-17 09:21:04', null, null);
+INSERT INTO `outtype` VALUES ('5', '2', '2', '家具', '2', '0', '1', '', '5', '2026-09-17 09:21:14', null, null);
+INSERT INTO `outtype` VALUES ('6', '2', '2', '煤气', '3', '0', '1', '', '5', '2026-09-17 09:21:54', null, null);
+INSERT INTO `outtype` VALUES ('7', '2', '1', '在外吃喝', '2', '0', '1', '', '5', '2026-09-17 09:22:14', null, null);
+INSERT INTO `outtype` VALUES ('8', '2', '1', '食材', '2', '0', '1', '', '5', '2026-09-17 09:22:25', null, null);
+INSERT INTO `outtype` VALUES ('9', '2', '1', '水果零食', '2', '0', '1', '', '5', '2026-09-17 09:22:42', null, null);
+INSERT INTO `outtype` VALUES ('10', '2', '4', '盘亏', '2', '0', '1', '盘点亏损时用', '5', '2026-09-18 18:38:15', null, null);
 
 -- ----------------------------
 -- Table structure for user
@@ -302,8 +302,8 @@ CREATE TABLE `user` (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('4', '3', 'admin', '超级管理员', '5F-4D-CC-3B-5A-A7-65-D6-1D-83-27-DE-B8-82-CF-99', '12345678901', 'xx@qq.com', '1', '0', '', '0', '2019-08-17 15:11:00', null, null);
-INSERT INTO `user` VALUES ('5', '2', 'user', '用户昵称', '5F-4D-CC-3B-5A-A7-65-D6-1D-83-27-DE-B8-82-CF-99', '12345678901', 'xx@qq.com', '1', '0', '', '0', '2019-08-17 21:05:00', null, null);
+INSERT INTO `user` VALUES ('4', '3', 'admin', '超级管理员', '5F-4D-CC-3B-5A-A7-65-D6-1D-83-27-DE-B8-82-CF-99', '12345678901', 'xx@qq.com', '1', '0', '', '0', '2026-09-17 15:11:00', null, null);
+INSERT INTO `user` VALUES ('5', '2', 'user', '用户昵称', '5F-4D-CC-3B-5A-A7-65-D6-1D-83-27-DE-B8-82-CF-99', '12345678901', 'xx@qq.com', '1', '0', '', '0', '2026-09-17 21:05:00', null, null);
 
 -- ----------------------------
 -- Table structure for __migrationhistory
